@@ -1,0 +1,109 @@
+<!-- Animated button for hamburger navbar attempt #1 -->
+<!-- Mostly based on video guide by Brad Traversy from YT channel Traversy Media -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cross</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #fa4c04;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        nav{
+            position: absolute;
+            top: 0;
+            background-color: white;
+            width: 100%;
+            height: 0;
+            transition: all 0.4s ease-in;
+        }
+
+
+        .container{
+            position: relative;
+            height: 80px;
+            width: 80px;
+            box-sizing: border-box;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: -1;
+        }
+
+        .toggler{
+            box-sizing: border-box;
+            position: absolute;
+            height: 80px;
+            width: 80px;
+            cursor: pointer;
+            margin: 0;
+            z-index: 1;
+            opacity: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .container>div{
+            position: relative;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 10px;
+            background-color: white;
+            transition: all 0.4s ease;
+        }
+
+        .container>div::before,
+        .container>div:after{
+            content: '';
+            position: absolute;
+            background-color: white;
+            width: 100%;
+            height: 10px;
+            top: -20px;
+
+        }
+
+        .container>div:after{
+            top: 20px;
+        }
+
+        .toggler:checked + .container>div{
+            transform: rotate(225deg);
+        }
+
+
+        .toggler:checked + .container>div:before,
+        .toggler:checked + .container>div:after{
+            top: 0;
+            transform: rotate(90deg);
+
+        }
+    </style>
+</head>
+<body>
+        <input type="checkbox" class="toggler">
+        <div class="container">
+            <div></div>
+        </div>
+
+</body>
+</html>
