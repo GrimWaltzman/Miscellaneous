@@ -1,0 +1,209 @@
+<!--A really basic webpage with little adaptivity made following yet another tutorial just for the sake of practice-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Шeb Design Company | Welcome</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            line-height: 1,5;
+            padding: 0;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        /* Global */
+        .container{
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+
+        .button{
+            height: 38px;
+            background:  #e8491d;
+            border: none;
+            padding: 0 20px 0 20px;
+            color: #fff;
+        }
+
+        /* Header */
+        header{
+            background: #35424a;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: 3px solid #e8491d;
+        }
+
+        header a{
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header a:hover{
+            color: #ccc;
+        }
+
+        header li{
+            /* float: left; */
+            display: inline;
+            padding: 0 20px 0 20px;
+            font-weight: bold;
+        }
+
+        header #branding{
+            float: left;
+        }
+
+        header #branding h1{
+            margin: 0;
+        }
+
+        header nav{
+            float: right;
+            margin-top: 10px;
+        }
+
+        header .highlight, header .current a{
+            color: #e8491d;
+            font-weight: bold;
+        }
+
+        /* Showcase */
+        #showcase{
+            min-height: 400px;
+            background: #777;
+            text-align: center;
+        }
+
+        #showcase h1{
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        #showcase p{
+            font-size: 20px;
+        }
+
+        /* Newsletter */
+        #newsletter{
+            padding: 15px;
+            color: #fff;
+            background: #35424a;
+            display: flex;
+        }
+
+        #newsletter .container{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .container>form{
+            margin-top: 22px;
+        }
+
+        #newsletter input[type='email']{
+            padding: 4px;
+            height: 25px;
+            width: 250px;
+        }
+
+        /* Boxes */
+        #boxes{
+            margin-top: 20px;
+        }
+
+        .box{
+            float: left;
+            text-align: center;
+            width: 30%;
+            padding: 10px;
+        }
+
+        .image{
+            width: 90px;
+            height: 90px;
+        }
+
+        /* Footer */
+        footer{
+            padding: 20px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #e8491d ;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Шeb</span> Design Company</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Affordable Professional Шeb Design</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab molestias consequatur distinctio nam animi voluptates?Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, sint.</p>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>Subscribe to our newsletter</h1>
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button type="submit" class="button">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="HTML5" class="image">
+                <h3>HTML5 Markup</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae odit nobis illum. Perferendis repellat eaque, deserunt tempore maiores odio excepturi!</p>
+            </div>
+            <div class="box">
+                <img src="https://maxcdn.icons8.com/Share/icon/Logos/css31600.png" alt="HTML5" class="image">
+                <h3>CSS3 Styling</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, perferendis minima aperiam non repudiandae officia! Modi sunt quos nobis nulla!</p>
+            </div>
+            <div class="box">
+                <img src="https://www.verdadesign.com/assets/thumbnails/image/winnipeg-graphic-design.png" alt="HTML5" class="image">
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat natus est alias quisquam sequi porro excepturi enim? Facere, delectus neque?</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Шeb Design &copy;2020</p>
+    </footer>
+</body>
+</html>
