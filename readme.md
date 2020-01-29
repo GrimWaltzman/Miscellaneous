@@ -1,0 +1,1 @@
+A repository for all the stuff i don't consider too important for a separate repository, at this point mostly stuff eityher made following various tutorials on YouTube or stuff based off of them in some ways
